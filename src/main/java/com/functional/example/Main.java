@@ -68,6 +68,7 @@ public class Main {
         System.out.println();
         System.out.println();
 
+        // how to use a custom comparator in java 8 stream
         customerList.stream().sorted((Customer c1, Customer c2) -> {
             if(c1.getTotalOrderAmount() > c2.getTotalOrderAmount()) return 1;
             if(c1.getTotalOrderAmount() < c2.getTotalOrderAmount()) return -1;
